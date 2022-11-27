@@ -6,41 +6,31 @@ import { useState } from 'react';
 function Header(props) {
 	let navigate = useNavigate();
 
-	const initialFormState = {
-		input: '',
-	};
-	const [formState, setFormState] = useState(initialFormState);
-
-	function handleSignedin(event) {
+	function handleClick(event) {
 		event.preventDefault();
 		// setSignedIn(true);
-		if (event.target.id === 'create') {
-			navigate('/createblog');
-		} else if (event.target.id === 'discover') {
-			navigate('/home');
-		} else if (event.target.id === 'about') {
-			navigate('/about');
-		} else if (event.target.id === 'profile') {
-			navigate('/profile');
+		if (event.target.id === 'about') {
+			navigate('/About');
+		} else if (event.target.id === 'events') {
+			navigate('/Events');
+		} else if (event.target.id === 'donate') {
+			navigate('/Donate');
+		} else if (event.target.id === 'contact') {
+			navigate('/Contact');
 		}
 	}
 
-	function handleSignedOut(event) {
-		event.preventDefault();
-		// setSignedIn(false);
-		localStorage.clear();
-		navigate('/');
-	}
+    function handleLogo(event){
+        event.preventDefault();
+        navigate('/home')
+    }
 
-	function handleChange(event) {
-		setFormState({ ...formState, input: event.target.value });
-		// setInputQuery(event.target.value);
-	}
+
 	return (
-		<nav class='navbar navbar-expand-sm bg-light navbar-light'>
-			<div class='container-fluid real-navbar'>
-				<div class='container-fluid'>
-					<a class='navbar-brand' href='#'>
+		<nav className='navbar navbar-expand-sm bg-light navbar-light'>
+			<div className='container-fluid real-navbar'>
+				<div className='container-fluid'>
+					<a className='navbar-brand' onClick={handleLogo}>
 						<img
 							src={require('../../Images/af-logo.png')}
 							alt='Avatar Logo'
@@ -49,25 +39,25 @@ function Header(props) {
 					</a>
 				</div>
 			</div>
-			<div class='container-fluid'>
-				<ul class='navbar-nav'>
-					<li class='nav-item'>
-						<a class='nav-link' href='#'>
+			<div className='container-fluid'>
+				<ul className='navbar-nav'>
+					<li className='nav-item'>
+						<a className='nav-link' href='#' id='about' onClick={handleClick}>
 							About
 						</a>
 					</li>
-					<li class='nav-item'>
-						<a class='nav-link' href='#'>
+					<li className='nav-item'>
+						<a className='nav-link' href='#' id='events' onClick={handleClick}>
 							Events
 						</a>
 					</li>
-					<li class='nav-item'>
-						<a class='nav-link' href='#'>
+					<li className='nav-item'>
+						<a className='nav-link' href='#' id='donate' onClick={handleClick}>
 							Donate
 						</a>
 					</li>
-					<li class='nav-item'>
-						<a class='nav-link' href='#'>
+					<li className='nav-item'>
+						<a className='nav-link' href='#' id='contact' onClick={handleClick}>
 							Contact
 						</a>
 					</li>
