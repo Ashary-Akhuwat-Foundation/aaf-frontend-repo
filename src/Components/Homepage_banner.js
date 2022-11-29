@@ -10,9 +10,11 @@ function Homepage_banner(props) {
 		// />
 		<div className='homepage-banner'>
 			<div className='homepage-banner-text'>
-				<h5>ART FOR IMPACT:</h5>
-				<h1>Pakistan Flood Relief Art Show</h1>
-				<h5>03.05.23 | COLONY HOUSE ANAHEIM</h5>
+				<h5 className='event-title'>ART FOR IMPACT:</h5>
+				<h1 className='event-title-des'>
+					Pakistan Flood <br></br> Relief Art Show
+				</h1>
+				<h5 className='event-date'>03.05.23 | COLONY HOUSE ANAHEIM</h5>
 				<div className='btn-div'>
 					<button>ATTEND</button>
 					<button>I'M AN ARTIST</button>
