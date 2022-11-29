@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik:wght@300&display=swap');
+
 .homepage-banner{
     height: 30rem;
     min-width: 100vw;
@@ -11,22 +13,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Rubik', Courier, monospace;
     color: white;
     font-weight: bolder;
 }
 
 .btn-div{
-    
+    font-family: 'Avenir', 'Rubik', Geneva, Verdana, sans-serif;
 }
 
+.event-title{
+
+    font-size: 17px;
+
+}
+.event-title-des{
+    font-family: 'Playfair Display';
+    font-size: 77px;
+}
+
+.event-date{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
 button{
     background-color: #7FA88B;
     border: 0;
     margin-right: 2rem;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
+    font-size: 14px;
     font-weight: bolder;
     padding: 0.8rem;
+    width: 156px;
+
 }
