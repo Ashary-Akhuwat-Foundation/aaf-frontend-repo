@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik:wght@300&display=swap');
+
 .main-container{
     background-image: url('../Images/Im_an_artist.png');
-    height: 85vh;
+    height: fit-content;
     min-width: 100vw;
     background-size: cover;
     display: flex;
@@ -12,6 +14,7 @@
     background-color: rgba(177, 211, 187, 0.7);
     width:35rem;
     color: white;
+    margin-top: 3rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-right: 4rem;
@@ -21,11 +24,13 @@
 form{
     padding: 2rem;
     margin-top: 3rem;
+    margin-bottom: 3rem;
     background-color: rgba(244,244,244);
 }
 
 .form-title{
     margin-bottom: 0;
+    font-family:'Playfair Display';
 
 }
 
@@ -39,9 +44,36 @@ form{
 
 label{
     margin-top: 2rem;
+    font-family: 'Playfair Display';
+    font-style: italic;
 }
 
 .donate-title{
     margin: 3rem;
     font-size: 5rem;
+    font-family:'Playfair Display' ;
+}
+
+.img1, .img2, .img3, .img4{
+    height: 5rem;
+}
+
+.txt1-container, .txt2-container,
+.txt3-container ,
+.txt4-container{
+    width:30vw;
+    margin-left: 7.5rem;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
+.float-container {
+    height: fit-content;
+    margin: 5rem;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    
 }

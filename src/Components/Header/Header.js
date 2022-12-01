@@ -26,7 +26,7 @@ function Header(props) {
 	}
 
 	return (
-		<nav className='navbar navbar-expand-sm bg-light navbar-light'>
+		<nav className='navbar navbar-expand-sm bg-light navbar-light py-0'>
 			<div className='container-fluid real-navbar'>
 				<div className='container-fluid'>
 					<a className='navbar-brand' onClick={handleLogo}>
