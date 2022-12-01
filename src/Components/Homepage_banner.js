@@ -1,7 +1,14 @@
 import React from 'react';
 import './Homepage-banner.css';
+import { useNavigate } from 'react-router-dom';
 
 function Homepage_banner(props) {
+	let navigate = useNavigate();
+
+	function handleClick(event) {
+		event.preventDefault();
+		navigate('artist-landing-page');
+	}
 	return (
 		// <img
 		// 	src={require('../Images/homepage-banner.png')}
@@ -16,8 +23,14 @@ function Homepage_banner(props) {
 				</h1>
 				<h5 className='event-date'>03.05.23 | COLONY HOUSE ANAHEIM</h5>
 				<div className='btn-div'>
-					<button>ATTEND</button>
-					<button>I'M AN ARTIST</button>
+					<a
+						href='https://www.eventbrite.com/e/art-for-impact-pakistan-flood-relief-art-show-tickets-442424994067'
+						target='blank'>
+						<button className='homepage-btn'>ATTEND</button>
+					</a>
+					<button className='homepage-btn' onClick={handleClick}>
+						I'M AN ARTIST
+					</button>
 				</div>
 			</div>
 		</div>

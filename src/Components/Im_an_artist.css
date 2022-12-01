@@ -1,0 +1,42 @@
+.main-container{
+    background-image: url('../Images/Im_an_artist.png');
+    height: 85vh;
+    min-width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.summary-div{
+    background-color: rgba(177, 211, 187, 0.7);
+    width:35rem;
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+form{
+    padding: 2rem;
+    margin-top: 3rem;
+    background-color: rgba(244,244,244);
+}
+
+.form-title{
+    margin-bottom: 0;
+    
+}
+
+.submit-btn{
+    margin-top: 1.5rem;
+    background-color: #15291B;
+    color: white;
+    padding: 0.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label{
+    margin-top: 2rem;
+}
