@@ -20,11 +20,10 @@ function Header(props) {
 		}
 	}
 
-    function handleLogo(event){
-        event.preventDefault();
-        navigate('/home')
-    }
-
+	function handleLogo(event) {
+		event.preventDefault();
+		navigate('/');
+	}
 
 	return (
 		<nav className='navbar navbar-expand-sm bg-light navbar-light'>
