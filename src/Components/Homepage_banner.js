@@ -1,4 +1,6 @@
 import React from 'react';
+import Events from './Events';
+import Event_Des from './Event_Des';
 import './Homepage-banner.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -33,6 +35,8 @@ function Homepage_banner(props) {
 					</button>
 				</div>
 			</div>
+			<Events />
+			<Event_Des />
 		</div>
 	);
 }
