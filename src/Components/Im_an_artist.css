@@ -26,7 +26,7 @@ form{
 
 .form-title{
     margin-bottom: 0;
-    
+
 }
 
 .submit-btn{
@@ -39,4 +39,9 @@ form{
 
 label{
     margin-top: 2rem;
+}
+
+.donate-title{
+    margin: 3rem;
+    font-size: 5rem;
 }
