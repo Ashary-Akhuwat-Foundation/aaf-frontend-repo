@@ -1,4 +1,6 @@
 import React from 'react';
+import Events from './Events';
+import Event_Des from './Event_Des';
 import './Homepage-banner.css';
 
 function Homepage_banner(props) {
@@ -20,6 +22,8 @@ function Homepage_banner(props) {
 					<button>I'M AN ARTIST</button>
 				</div>
 			</div>
+			<Events />
+			<Event_Des />
 		</div>
 	);
 }

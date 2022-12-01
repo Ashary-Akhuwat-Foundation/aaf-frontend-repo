@@ -1,0 +1,21 @@
+
+.event-section-name {
+    border: solid black 1px;
+    height: 20em;
+    width: 100vw;
+    background-color: rgb(134,171,123);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.event-container-header{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    border: solid black 1px;
+    height: 100%;
+    width: 70%;
+    background-color: white;
+}
