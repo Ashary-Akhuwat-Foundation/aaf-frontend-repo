@@ -4,6 +4,7 @@ import Event_Des from './Event_Des';
 import './Homepage-banner.css';
 import { useNavigate } from 'react-router-dom';
 import Footer from './Footer';
+import Contact from './Contact';
 
 function Homepage_banner(props) {
 	let navigate = useNavigate();
@@ -38,6 +39,7 @@ function Homepage_banner(props) {
 			</div>
 			<Events />
 			<Event_Des />
+			<Contact />
 			<Footer />
 		</div>
 	);
