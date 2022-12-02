@@ -58,9 +58,9 @@ function Footer(props) {
 					</a> */}
 				</div>
 			</div>
-			<div className='text-sm-right p-0 created-by'>
+			{/* <div className='text-sm-right p-0 created-by'>
 				Created by Shraddha Anand and Meesum Ashary
-			</div>
+			</div> */}
 		</footer>
 	);
 }
