@@ -48,3 +48,31 @@
     width: 156px;
 
 }
+
+@media (max-width: 500px) {
+
+
+    .homepage-banner-text{
+        text-align:center;
+
+    }
+
+    .btn-div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .event-title{
+    font-size: 12px;
+    }
+
+    .event-title-des{
+    
+    font-size: 35px;
+    }
+
+    .homepage-btn{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
