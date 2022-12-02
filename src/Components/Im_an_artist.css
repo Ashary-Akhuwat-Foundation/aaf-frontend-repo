@@ -26,6 +26,7 @@ form{
     margin-top: 3rem;
     margin-bottom: 3rem;
     background-color: rgba(244,244,244);
+    width: 35rem;
 }
 
 .form-title{
@@ -67,13 +68,17 @@ label{
     font-size: 1.5rem;
 }
 
-.float-container {
-    height: fit-content;
-    margin: 5rem;
+
+.artist-under-construction-message{
+    margin-top: 1rem;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: black;
+    font-family: 'Times New Roman', Times, serif;
+    width: 30rem;
 }
 
-.float-child {
-    width: 50%;
-    float: left;
-    
+.col1,
+.col2 {
+    margin: 2rem;
 }

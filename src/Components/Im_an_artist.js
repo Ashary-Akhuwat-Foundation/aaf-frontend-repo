@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import '../Components/Im_an_artist.css';
 import logo1 from '../Images/icon1.png';
 import easel from '../Images/easel.png';
@@ -6,6 +7,12 @@ import people from '../Images/people.png';
 import solidarity from '../Images/solidarity.png';
 
 function Im_an_artist(props) {
+	const [artistSubmit, setArtistSubmit] = useState(false);
+
+	function handleSubmit(event) {
+		event.preventDefault();
+		setArtistSubmit(true);
+	}
 	return (
 		<div>
 			<div className='main-container'>
@@ -52,15 +59,25 @@ function Im_an_artist(props) {
 						</div>
 					</div>
 					<div className='row'>
-						<button className='submit-btn'>Submit</button>
+						<button className='submit-btn' onClick={handleSubmit}>
+							Submit
+						</button>
 					</div>
+					{artistSubmit ? (
+						<div className='artist-under-construction-message'>
+							Oops! We are sorry but the site is under construction and so your
+							information was not recorded! We are working on it!
+						</div>
+					) : (
+						''
+					)}
 				</form>
 			</div>
 			<div>
 				<h1 className='text-center donate-title'>Why Donate?</h1>
 			</div>
-			<div className='float-container'>
-				<div className='float-child'>
+			<div className='container-fluid d-flex'>
+				<div className='container-fluid col1'>
 					<div>
 						<div className='img1-container'>
 							<img src={logo1} alt='' className='rounded float-left img1' />
@@ -80,7 +97,7 @@ function Im_an_artist(props) {
 						</div>
 					</div>
 				</div>
-				<div className='float-child'>
+				<div className='container-fluid col2'>
 					<div>
 						<div className='img3-container'>
 							<img src={people} alt='' className='rounded float-left img1' />

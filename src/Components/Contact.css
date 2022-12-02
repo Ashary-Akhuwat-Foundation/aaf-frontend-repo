@@ -59,3 +59,12 @@
     font-weight: bolder;
     font-size: 1.2rem;
 }
+
+.under-construction-message{
+    margin-top: 1rem;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: black;
+    font-family: 'Times New Roman', Times, serif
+   
+}

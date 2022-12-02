@@ -1,7 +1,14 @@
 import React from 'react';
+import { useState } from 'react';
 import '../Components/Contact.css';
 
 function Contact(props) {
+	const [email, setEmail] = useState(false);
+
+	function handleSubmit(event) {
+		event.preventDefault();
+		setEmail(true);
+	}
 	return (
 		<div className='container-fluid contact-container'>
 			<div className='container-fluid column1'>
@@ -10,8 +17,16 @@ function Contact(props) {
 				<form className='contact-form'>
 					<label htmlFor='email'>Email * </label>
 					<input name='email' type='email' placeholder='Enter your email' />
-					<button> SUBMIT</button>
+					<button onClick={handleSubmit}> SUBMIT</button>
 				</form>
+				{email ? (
+					<div className='under-construction-message'>
+						We are sorry but the site is under construction and so your email
+						was not recorded! We are working on it!
+					</div>
+				) : (
+					''
+				)}
 			</div>
 			<div className='container-fluid column2'>
 				<div>
