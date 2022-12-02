@@ -8,6 +8,21 @@ function Footer(props) {
 		event.preventDefault();
 		navigate('/');
 	}
+
+	function handleClick(event) {
+		event.preventDefault();
+		// setSignedIn(true);
+		if (event.target.id === 'about') {
+			navigate('/About');
+		} else if (event.target.id === 'events') {
+			navigate('/Events');
+		} else if (event.target.id === 'donate') {
+			navigate('/Donate');
+		} else if (event.target.id === 'contact') {
+			navigate('/Contact');
+		}
+	}
+
 	return (
 		<footer className='custom-footer'>
 			<div className='container-fluid main-footer-container'>
@@ -23,10 +38,21 @@ function Footer(props) {
 					</a>
 				</div>
 				<div className='container d-flex flex-column align-items-center justify-content-center text-center footer-links'>
-					<a href=''>ABOUT</a>
-					<a href=''>EVENTS</a>
-					<a href=''>DONATE </a>
-					<a href=''>CONTACT</a>
+					<a href='#' id='about' onClick={handleClick}>
+						About
+					</a>
+
+					<a href='#' id='events' onClick={handleClick}>
+						Events
+					</a>
+
+					<a href='#' id='donate' onClick={handleClick}>
+						Donate
+					</a>
+
+					<a href='#' id='contact' onClick={handleClick}>
+						Contact
+					</a>
 				</div>
 			</div>
 			<div className='text-sm-right p-0 created-by'>
