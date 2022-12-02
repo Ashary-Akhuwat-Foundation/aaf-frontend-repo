@@ -42,17 +42,20 @@ function Footer(props) {
 						About
 					</a>
 
-					<a href='#' id='events' onClick={handleClick}>
+					{/* <a href='#' id='events' onClick={handleClick}>
 						Events
-					</a>
+					</a> */}
 
-					<a href='#' id='donate' onClick={handleClick}>
+					<a
+						href='https://akhuwatusa-bloom.kindful.com/?campaign=1220055'
+						id='donate'
+						target='blank'>
 						Donate
 					</a>
 
-					<a href='#' id='contact' onClick={handleClick}>
+					{/* <a href='#' id='contact' onClick={handleClick}>
 						Contact
-					</a>
+					</a> */}
 				</div>
 			</div>
 			<div className='text-sm-right p-0 created-by'>
