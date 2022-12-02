@@ -1,12 +1,23 @@
 import React from 'react';
+import { useState } from 'react';
 import '../Components/Im_an_artist.css';
 import logo1 from '../Images/icon1.png';
+import easel from '../Images/easel.png';
+import people from '../Images/people.png';
+import solidarity from '../Images/solidarity.png';
+import Footer from './Footer';
 
 function Im_an_artist(props) {
+	const [artistSubmit, setArtistSubmit] = useState(false);
+
+	function handleSubmit(event) {
+		event.preventDefault();
+		setArtistSubmit(true);
+	}
 	return (
 		<div>
 			<div className='main-container'>
-				<div className='container summary-div'>
+				<div className='container-fluid summary-div'>
 					<h1>Your Art Helps Rebuild</h1>
 					<p>
 						Calling all artists to donate their artwork to our upcoming art
@@ -49,20 +60,68 @@ function Im_an_artist(props) {
 						</div>
 					</div>
 					<div className='row'>
-						<button className='submit-btn'>Submit</button>
+						<button className='submit-btn' onClick={handleSubmit}>
+							Submit
+						</button>
 					</div>
+					{artistSubmit ? (
+						<div className='artist-under-construction-message'>
+							Oops! We are sorry but the site is under construction and so your
+							information was not recorded! We are working on it!
+						</div>
+					) : (
+						''
+					)}
 				</form>
 			</div>
 			<div>
 				<h1 className='text-center donate-title'>Why Donate?</h1>
 			</div>
-			<div>
-				<div className='col1'>
-					<div className='img1'>
-						<img src={logo1} alt='' />
+			<div className='container-fluid d-flex'>
+				<div className='container-fluid col1'>
+					<div>
+						<div className='img1-container'>
+							<img src={logo1} alt='' className='rounded float-left img1' />
+						</div>
+						<div className='txt1-container'>
+							<p>
+								TAX DEDUCTIBLE DONATION ONCE YOUR PAINTING HAS SOLD (US Only)
+							</p>
+						</div>
+					</div>
+					<div>
+						<div className='img2-container'>
+							<img src={easel} alt='' className='rounded float-left img1' />
+						</div>
+						<div className='txt2-container'>
+							<p>YOUR WORK FEATURED AT AN IN-PERSON ART SHOW</p>
+						</div>
+					</div>
+				</div>
+				<div className='container-fluid col2'>
+					<div>
+						<div className='img3-container'>
+							<img src={people} alt='' className='rounded float-left img1' />
+						</div>
+						<div className='txt3-container'>
+							<p>PROMOTED TO A DIGITAL AUDIENCE VIA AN ONLINE AUCTION</p>
+						</div>
+					</div>
+					<div>
+						<div className='img4-container'>
+							<img
+								src={solidarity}
+								alt=''
+								className='rounded float-left img1'
+							/>
+						</div>
+						<div className='txt4-container'>
+							<p>SUPPORTING AN URGENT CAUSE</p>
+						</div>
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 }
