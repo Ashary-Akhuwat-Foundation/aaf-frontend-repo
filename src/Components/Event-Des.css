@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik:wght@300&display=swap');
+
+.description-container{
+    background-color:white;
+    height: fit-content;
+    padding: 4rem;
+}
+
+.des-title{
+    font-size:3.4rem;
+    font-family: 'Playfair Display';
+}
+
+.description-container h5{
+    font-weight: 900;
+}
+
+.description-container{
+    font-family: "Rubik";
+}
+
+.description-container button {
+
+    background-color: #15291B;
+    width: 10rem;
+    height: 2.4rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.description-container a{
+    color: white;
+    text-decoration: none;
+}
+
+.des-div{
+    margin-bottom: 2rem;
+    text-align: left;
+    width: 75vw;
+}

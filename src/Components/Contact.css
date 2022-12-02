@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik:wght@300&display=swap');
+
+.contact-container{
+    background-image: url('../Images/contact-bg.png');
+    background-size: cover;
+    background-position-y: bottom;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+
+    padding: 4rem;
+    
+}
+
+.contact-container h1{
+    font-size: 3rem;
+        font-family: 'Playfair';
+}
+
+.contact-form{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 25rem;
+} 
+
+.contact-form label{
+    margin-bottom: 0;
+}
+
+.contact-form button{
+    width: 8em;
+    height: 2.7rem;
+    margin-top: 0.5rem;
+    color: white;
+    background-color: rgba(141,175,145);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.contact-form input{
+    margin-top: 1rem;
+    padding: 0.6rem;
+}
+
+.contact-form input::placeholder {
+    color: #84B08F;
+}
+
+.column1, .column2{
+    margin: 2rem;
+}
+
+.column2 h5{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.under-construction-message{
+    margin-top: 1rem;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: black;
+    font-family: 'Times New Roman', Times, serif
+   
+}

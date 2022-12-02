@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik:wght@300&display=swap');
+
+.main-container{
+    background-image: url('../Images/Im_an_artist.png');
+    height: fit-content;
+    min-width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.summary-div{
+    background-color: rgba(177, 211, 187, 0.7);
+    width:35rem;
+    color: white;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+form{
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: rgba(244,244,244);
+    width: 35rem;
+}
+
+.form-title{
+    margin-bottom: 0;
+    font-family:'Playfair Display';
+
+}
+
+.submit-btn{
+    margin-top: 1.5rem;
+    background-color: #15291B;
+    color: white;
+    padding: 0.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label{
+    margin-top: 2rem;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+
+.donate-title{
+    margin: 3rem;
+    font-size: 5rem;
+    font-family:'Playfair Display' ;
+}
+
+.img1, .img2, .img3, .img4{
+    height: 5rem;
+}
+
+.txt1-container, .txt2-container,
+.txt3-container ,
+.txt4-container{
+    width:30vw;
+    margin-left: 7.5rem;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
+
+.artist-under-construction-message{
+    margin-top: 1rem;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: black;
+    font-family: 'Times New Roman', Times, serif;
+    width: 30rem;
+}
+
+.col1,
+.col2 {
+    margin: 2rem;
+}

@@ -6,6 +6,10 @@ import './App.css';
 import Navbar from './Components/Header/Header';
 import About from './Components/About';
 import Homepage_banner from './Components/Homepage_banner';
+import ImAnArtist from './Components/Im_an_artist';
+import Footer from './Components/Footer';
+import Events from './Components/Events';
+import Event_Des from './Components/Event_Des';
 
 function App() {
 	return (
@@ -15,12 +19,17 @@ function App() {
 			</header>
 			<main>
 				<Routes>
-					<Route path='/home' element={<Homepage_banner />} />
-					{/* <Route path='/About' element={About}></Route> */}
+					<Route path='/' element={<Homepage_banner />} />
+					{/* <Route path='/' element={<Events />} />
+					<Route path='/' element={<Event_Des />} /> */}
 					<Route path='/About' element={<About />} />
-					{/* <Route path='/home' element={Navbar}></Route> */}
+
+					<Route path='/artist-landing-page' element={<ImAnArtist />} />
 				</Routes>
 			</main>
+			{/* <footer>
+				<Footer />
+			</footer> */}
 		</div>
 	);
 }
