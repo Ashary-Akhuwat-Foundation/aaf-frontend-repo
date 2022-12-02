@@ -5,6 +5,7 @@ import logo1 from '../Images/icon1.png';
 import easel from '../Images/easel.png';
 import people from '../Images/people.png';
 import solidarity from '../Images/solidarity.png';
+import Footer from './Footer';
 
 function Im_an_artist(props) {
 	const [artistSubmit, setArtistSubmit] = useState(false);
@@ -120,6 +121,7 @@ function Im_an_artist(props) {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 }
