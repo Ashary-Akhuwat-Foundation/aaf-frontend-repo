@@ -7,8 +7,6 @@
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right, rgba(163,200,128), rgba(218,221,231));
-    
-    
 }
 
 .first-line{
@@ -19,6 +17,7 @@
     color: white;
     font-weight: 550;
 }
+
 .header{
     color: white;
     font-family: "Rubik";
@@ -40,4 +39,10 @@
     flex-direction: column;
     justify-content:space-around;
     margin-left: 3rem;
+}
+
+@media (max-width: 500px) {
+
+
+    
 }
