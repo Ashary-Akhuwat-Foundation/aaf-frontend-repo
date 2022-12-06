@@ -41,8 +41,31 @@
     margin-left: 3rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
+    .event-container{
+        text-align: center;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 90%
+    } 
 
+    .first-line{
+        font-size: 14px;
+        font-weight: bolder;
+
+    }
+
+    .header{
+        font-size: 33px;
+        font-weight: bolder;
+    
+    }
+    .event-info{
+        font-size: 24px;
+    }
     
 }

@@ -8,8 +8,8 @@ function Events(props) {
 				<p className='first-line'> JOIN US FOR</p>
 				<h1 className='header'>AN IMMERSIVE ART EXPERIENCE</h1>
 				<p className='event-info'>
-					IN PERSON 03.05.23. @ COLONY HOUSE ANAHEIM <br /> LAUNCHING ONLINE ON
-					02.15.23
+					IN PERSON 03.05.23. @ COLONY HOUSE ANAHEIM <br className='break' />{' '}
+					LAUNCHING ONLINE ON 02.15.23
 				</p>
 			</div>
 		</div>
