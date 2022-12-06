@@ -12,12 +12,17 @@ function Contact(props) {
 	return (
 		<div className='container-fluid contact-container'>
 			<div className='container-fluid column1'>
-				<h1>More Events To Come</h1>
-				<h5>Get added to our VIP list for invitations to upcoming events!</h5>
+				<h1 className='first-text'>More Events To Come</h1>
+				<h5 className='text2'>
+					Get added to our VIP list for invitations to upcoming events!
+				</h5>
 				<form className='contact-form'>
 					<label htmlFor='email'>Email * </label>
 					<input name='email' type='email' placeholder='Enter your email' />
-					<button onClick={handleSubmit}> SUBMIT</button>
+					<button className='email-submit' onClick={handleSubmit}>
+						{' '}
+						SUBMIT
+					</button>
 				</form>
 				{email ? (
 					<div className='under-construction-message'>
