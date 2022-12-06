@@ -6,8 +6,8 @@ import Map from './Map';
 function Event_Des(props) {
 	const location = {
 		address: '401 N Anaheim Blvd, Anaheim, CA 92805',
-		lng: '-117.91379915090289',
-		lat: '33.83933792046406',
+		lng: -117.91379915090289,
+		lat: 33.83933792046406
 	};
 	const zoomLevel = 10;
 

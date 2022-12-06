@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@iconify/icons-mdi": "^1.2.34",
-    "@iconify/react": "^4.0.1"
+    "@iconify/react": "^4.0.1",
+    "webpack-obfuscator": "^0.17.3"
   }
 }
