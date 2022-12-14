@@ -1,8 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Event-Des.css';
+import Map from './Map';
 
 function Event_Des(props) {
+	const location = {
+		address: '401 N Anaheim Blvd, Anaheim, CA 92805',
+		lng: '-117.91379915090289',
+		lat: '33.83933792046406',
+	};
+	const zoomLevel = 10;
+
 	let navigate = useNavigate();
 
 	function handleSubmit(event) {
@@ -76,6 +84,7 @@ function Event_Des(props) {
 					</a>
 				</div>
 			</div>
+			<Map location={location} zoomLevel={zoomLevel} />
 		</div>
 	);
 }
