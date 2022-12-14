@@ -10,6 +10,7 @@ import ImAnArtist from './Components/Im_an_artist';
 import Footer from './Components/Footer';
 import Events from './Components/Events';
 import Event_Des from './Components/Event_Des';
+import AuctionLandingPage from './Components/AuctionLandingPage';
 
 function App() {
 	return (
@@ -25,6 +26,10 @@ function App() {
 					<Route path='/About' element={<About />} />
 
 					<Route path='/artist-landing-page' element={<ImAnArtist />} />
+					<Route
+						path='/auction-landing-page'
+						element={<AuctionLandingPage />}
+					/>
 				</Routes>
 			</main>
 			{/* <footer>
