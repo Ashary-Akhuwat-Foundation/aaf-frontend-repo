@@ -11,6 +11,7 @@ import Footer from './Components/Footer';
 import Events from './Components/Events';
 import Event_Des from './Components/Event_Des';
 import AuctionLandingPage from './Components/AuctionLandingPage';
+import ArtistList from './Components/ArtistList';
 
 function App() {
 	return (
@@ -30,6 +31,7 @@ function App() {
 						path='/auction-landing-page'
 						element={<AuctionLandingPage />}
 					/>
+					<Route path='/artists-viewing-page' element={<ArtistList />} />
 				</Routes>
 			</main>
 			{/* <footer>

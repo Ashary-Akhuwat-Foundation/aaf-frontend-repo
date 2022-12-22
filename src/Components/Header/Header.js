@@ -17,6 +17,8 @@ function Header(props) {
 			navigate('/Contact');
 		} else if (event.target.id == 'auction') {
 			navigate('/auction-landing-page');
+		} else if(event.target.id == 'artists'){
+			navigate('/artists-viewing-page')
 		}
 	}
 
@@ -62,6 +64,11 @@ function Header(props) {
 					<li className='nav-item'>
 						<a className='nav-link' href='#' id='auction' onClick={handleClick}>
 							Auction
+						</a>
+					</li>
+					<li className='nav-item'>
+						<a className='nav-link' href='#' id='artists' onClick={handleClick}>
+							Artists
 						</a>
 					</li>
 					{/* <li className='nav-item'>
