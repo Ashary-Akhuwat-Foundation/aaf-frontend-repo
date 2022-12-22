@@ -1,0 +1,19 @@
+.blog-container {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    max-width: 1200px;
+}
+
+.home-title-in {
+    font-size: 3rem;
+    max-width: 70%;
+    text-align: center;
+}
+
+.text-in {
+    font-size: 4rem;
+    line-height: 1.2;
+}
