@@ -17,3 +17,50 @@
     font-size: 4rem;
     line-height: 1.2;
 }
+
+@media (max-width: 800px) {
+    * {
+        text-align: center;
+    }
+
+    .blog-card {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 3%;
+        text-align: center;
+        justify-content: space-between;
+        font-family: 'Vollkorn', serif;
+        font-size: 1.2rem;
+    }
+
+    .home-title-in {
+        font-size: 2.5rem;
+        max-width: 90%;
+    }
+
+    .blog-category-in {
+        font-size: 1rem;
+    }
+
+    .blog-title-in {
+        font-size: 1.2em;
+    }
+
+    .blog-description-in {
+        font-size: 1.0rem;
+        flex-direction: column;
+        margin: 1em;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .image-container {
+        max-height: 10rem;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}

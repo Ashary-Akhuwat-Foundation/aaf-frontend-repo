@@ -6,14 +6,41 @@ import easel from '../Images/easel.png';
 import people from '../Images/people.png';
 import solidarity from '../Images/solidarity.png';
 import Footer from './Footer';
+import axios from 'axios';
 
 function Im_an_artist(props) {
-	const [artistSubmit, setArtistSubmit] = useState(false);
+	const initialFormState = {
+		firstname: '',
+		lastname: '',
+		email: '',
+		phone: '',
+		message: '',
+	};
 
-	function handleSubmit(event) {
+	const [artistSubmit, setArtistSubmit] = useState(false);
+	const [formState, setFormState] = useState(initialFormState);
+
+	function handleChange(event) {
+		event.preventDefault();
+		setFormState({ ...formState, [event.target.id]: event.target.value });
+	}
+
+	const handleSubmit = async (event) => {
 		event.preventDefault();
 		setArtistSubmit(true);
-	}
+		try {
+			const res = await axios.post(
+				'https://quiet-chamber-04430.herokuapp.com/api/artistMessages',
+				formState
+			);
+			// if (Response.status === 200) {
+			// 	setArtistSubmit(true);
+			// }
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
 	return (
 		<div>
 			<div className='main-container'>
@@ -32,12 +59,24 @@ function Im_an_artist(props) {
 					<div className='row'>
 						<div className='col'>
 							<label htmlFor='first-name'>First Name</label>
-							<input type='text' className='form-control' name='first-name' />
+							<input
+								required
+								type='text'
+								id='firstname'
+								value={formState.firstname}
+								onChange={handleChange}
+								className='form-control'
+								name='first-name'
+							/>
 						</div>
 						<div className='col'>
 							<label htmlFor='last-name'>Last Name</label>
 							<input
-								type='password'
+								required
+								type='text'
+								id='lastname'
+								value={formState.lastname}
+								onChange={handleChange}
 								className='form-control'
 								name='last-name'
 							/>
@@ -47,16 +86,36 @@ function Im_an_artist(props) {
 						<div className='col'>
 							<div className='col'>
 								<label htmlFor='email'>Email *</label>
-								<input type='text' className='form-control' name='email' />
+								<input
+									type='text'
+									className='form-control'
+									id='email'
+									value={formState.email}
+									onChange={handleChange}
+									name='email'
+								/>
 							</div>
 							<div className='col'>
 								<label htmlFor='phone'>Phone</label>
-								<input type='tel' className='form-control' name='phone' />
+								<input
+									type='tel'
+									id='phone'
+									value={formState.phone}
+									onChange={handleChange}
+									className='form-control'
+									name='phone'
+								/>
 							</div>
 						</div>
 						<div className='col'>
 							<label htmlFor='Message'>Message</label>
-							<textarea class='form-control' rows='5' name='message'></textarea>
+							<textarea
+								class='form-control'
+								rows='5'
+								id='message'
+								value={formState.message}
+								onChange={handleChange}
+								name='message'></textarea>
 						</div>
 					</div>
 					<div className='row'>
@@ -66,8 +125,7 @@ function Im_an_artist(props) {
 					</div>
 					{artistSubmit ? (
 						<div className='artist-under-construction-message'>
-							Oops! We are sorry but the site is under construction and so your
-							information was not recorded! We are working on it!
+							Your message has been received! Thank you!
 						</div>
 					) : (
 						''
